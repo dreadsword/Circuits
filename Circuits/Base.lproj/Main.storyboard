@@ -942,14 +942,6 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M69-2d-Fht">
-                                <rect key="frame" x="19" y="329" width="22" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="radio" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="RpL-gY-1Ww">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RPT-4z-LSx">
                                 <rect key="frame" x="338" y="329" width="22" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -958,9 +950,45 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M69-2d-Fht">
+                                <rect key="frame" x="19" y="329" width="22" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="radio" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="RpL-gY-1Ww">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="euk-cm-KjP">
+                                <rect key="frame" x="412" y="421" width="55" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="0" id="O1h-Xl-nJv">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RyU-Ed-ZCT">
+                                <rect key="frame" x="412" y="330" width="55" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="0" id="1df-li-Wd1">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gkg-tj-U9R">
+                                <rect key="frame" x="412" y="383" width="55" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="0" id="vbz-7f-0na">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="a_decimalText" destination="euk-cm-KjP" id="JP2-s9-ocS"/>
                         <outlet property="a_switch_0" destination="hRk-lw-wpP" id="ycj-Zc-dY9"/>
                         <outlet property="a_switch_1" destination="N7A-4U-EoB" id="42e-fP-mnH"/>
                         <outlet property="a_switch_2" destination="j4b-B1-c8e" id="fxx-dN-vTu"/>
@@ -969,6 +997,7 @@
                         <outlet property="a_switch_5" destination="rsQ-9y-PmN" id="QXZ-8H-OMs"/>
                         <outlet property="a_switch_6" destination="Ynd-KC-Pj2" id="bHC-eZ-xIz"/>
                         <outlet property="a_switch_7" destination="OIa-Gg-PYp" id="Wqo-f4-ySa"/>
+                        <outlet property="b_decimalText" destination="gkg-tj-U9R" id="fcV-d3-Xi1"/>
                         <outlet property="b_switch_0" destination="fy6-fH-Rtk" id="mqq-zK-bWk"/>
                         <outlet property="b_switch_1" destination="3RG-K6-9WV" id="vgw-hv-GtE"/>
                         <outlet property="b_switch_2" destination="pf0-Vf-PZB" id="FrW-QK-Xdm"/>
@@ -986,6 +1015,7 @@
                         <outlet property="light_6" destination="Zd4-fj-adP" id="jpy-ei-GTq"/>
                         <outlet property="light_7" destination="XqM-hj-Ge3" id="8Al-f6-NJC"/>
                         <outlet property="light_8" destination="M69-2d-Fht" id="oeC-tt-pcf"/>
+                        <outlet property="total_decimalText" destination="RyU-Ed-ZCT" id="znO-Jc-O5W"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

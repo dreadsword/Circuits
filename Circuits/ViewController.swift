@@ -39,6 +39,9 @@ class ViewController: NSViewController
     @IBOutlet var light_7: NSButton!
     @IBOutlet var light_8: NSButton!
     
+    @IBOutlet var a_decimalText: NSTextField!
+    @IBOutlet var b_decimalText: NSTextField!
+    @IBOutlet var total_decimalText: NSTextField!
     
     var SwitchA0: Switch!
     var SwitchA1: Switch!
@@ -119,11 +122,80 @@ class ViewController: NSViewController
         Light8 = Light(alight:light_8, aninput:theAdder.adder7.CarryOut);
     }
 
+    func calcDecimals()
+    {
+        var a_decimal: Int = 0
+        
+        let a0 = Int(pow(2.0,0.0)) * Int(SwitchA0.output())
+        let a1 = Int(pow(2.0,1.0)) * Int(SwitchA1.output())
+        let a2 = Int(pow(2.0,2.0)) * Int(SwitchA2.output())
+        let a3 = Int(pow(2.0,3.0)) * Int(SwitchA3.output())
+        let a4 = Int(pow(2.0,4.0)) * Int(SwitchA4.output())
+        let a5 = Int(pow(2.0,5.0)) * Int(SwitchA5.output())
+        let a6 = Int(pow(2.0,6.0)) * Int(SwitchA6.output())
+        let a7 = Int(pow(2.0,7.0)) * Int(SwitchA7.output())
+        
+        a_decimal = a0
+        a_decimal = a_decimal + a1
+        a_decimal = a_decimal + a2
+        a_decimal = a_decimal + a3
+        a_decimal = a_decimal + a4
+        a_decimal = a_decimal + a5
+        a_decimal = a_decimal + a6
+        a_decimal = a_decimal + a7
+        
+        a_decimalText.integerValue = Int(a_decimal)
+        
+        
+        var b_decimal: Int = 0
+        
+        let b0 = Int(pow(2.0,0.0)) * Int(SwitchB0.output())
+        let b1 = Int(pow(2.0,1.0)) * Int(SwitchB1.output())
+        let b2 = Int(pow(2.0,2.0)) * Int(SwitchB2.output())
+        let b3 = Int(pow(2.0,3.0)) * Int(SwitchB3.output())
+        let b4 = Int(pow(2.0,4.0)) * Int(SwitchB4.output())
+        let b5 = Int(pow(2.0,5.0)) * Int(SwitchB5.output())
+        let b6 = Int(pow(2.0,6.0)) * Int(SwitchB6.output())
+        let b7 = Int(pow(2.0,7.0)) * Int(SwitchB7.output())
+        
+        b_decimal = b0
+        b_decimal = b_decimal + b1
+        b_decimal = b_decimal + b2
+        b_decimal = b_decimal + b3
+        b_decimal = b_decimal + b4
+        b_decimal = b_decimal + b5
+        b_decimal = b_decimal + b6
+        b_decimal = b_decimal + b7
+        
+        b_decimalText.integerValue = Int(b_decimal)
+        
+        
+        var c_decimal: Int = 0
+        
+        let c0 = Int(pow(2.0,0.0)) * Int(Light0.output())
+        let c1 = Int(pow(2.0,1.0)) * Int(Light1.output())
+        let c2 = Int(pow(2.0,2.0)) * Int(Light2.output())
+        let c3 = Int(pow(2.0,3.0)) * Int(Light3.output())
+        let c4 = Int(pow(2.0,4.0)) * Int(Light4.output())
+        let c5 = Int(pow(2.0,5.0)) * Int(Light5.output())
+        let c6 = Int(pow(2.0,6.0)) * Int(Light6.output())
+        let c7 = Int(pow(2.0,7.0)) * Int(Light7.output())
+        
+        c_decimal = c0
+        c_decimal = c_decimal + c1
+        c_decimal = c_decimal + c2
+        c_decimal = c_decimal + c3
+        c_decimal = c_decimal + c4
+        c_decimal = c_decimal + c5
+        c_decimal = c_decimal + c6
+        c_decimal = c_decimal + c7
+        
+        total_decimalText.integerValue = Int(c_decimal)
+    }
     
     
     @IBAction func buttonAction(_ sender: Any)
     {
-        print("CLICK")
         Light0.setState()
         Light1.setState()
         Light2.setState()
@@ -133,6 +205,8 @@ class ViewController: NSViewController
         Light6.setState()
         Light7.setState()
         Light8.setState()
+        
+        calcDecimals()
     }
     
     
@@ -140,7 +214,6 @@ class ViewController: NSViewController
     {
         didSet
         {
-        // Update the view, if already loaded.
         }
     }
 

@@ -14,7 +14,6 @@ class Light
     let thelight: NSButton
     let input: () -> UInt
     
-    
     init(alight:NSButton,aninput:@escaping () -> UInt)
     {
         thelight = alight
@@ -25,6 +24,11 @@ class Light
     {
         let state = input() == 1 ? NSControl.StateValue.on : NSControl.StateValue.off
         thelight.state = state
+    }
+    
+    func output() -> UInt
+    {
+        return thelight.state == NSControl.StateValue.on ? 1 : 0
     }
 }
 

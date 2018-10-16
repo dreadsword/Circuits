@@ -80,7 +80,12 @@ class ViewController: NSViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
+        
+        init_circuit()
+    }
+    
+    func init_circuit()
+    {
         SwitchA0 = Switch(aswitch:a_switch_0);
         SwitchA1 = Switch(aswitch:a_switch_1);
         SwitchA2 = Switch(aswitch:a_switch_2);
@@ -126,14 +131,14 @@ class ViewController: NSViewController
     {
         var a_decimal: Int = 0
         
-        let a0 = Int(pow(2.0,0.0)) * Int(SwitchA0.output())
-        let a1 = Int(pow(2.0,1.0)) * Int(SwitchA1.output())
-        let a2 = Int(pow(2.0,2.0)) * Int(SwitchA2.output())
-        let a3 = Int(pow(2.0,3.0)) * Int(SwitchA3.output())
-        let a4 = Int(pow(2.0,4.0)) * Int(SwitchA4.output())
-        let a5 = Int(pow(2.0,5.0)) * Int(SwitchA5.output())
-        let a6 = Int(pow(2.0,6.0)) * Int(SwitchA6.output())
-        let a7 = Int(pow(2.0,7.0)) * Int(SwitchA7.output())
+        let a0 = 1 * Int(SwitchA0.output())
+        let a1 = 2 * Int(SwitchA1.output())
+        let a2 = 4 * Int(SwitchA2.output())
+        let a3 = 8 * Int(SwitchA3.output())
+        let a4 = 16 * Int(SwitchA4.output())
+        let a5 = 32 * Int(SwitchA5.output())
+        let a6 = 64 * Int(SwitchA6.output())
+        let a7 = 128 * Int(SwitchA7.output())
         
         a_decimal = a0
         a_decimal = a_decimal + a1
@@ -149,14 +154,14 @@ class ViewController: NSViewController
         
         var b_decimal: Int = 0
         
-        let b0 = Int(pow(2.0,0.0)) * Int(SwitchB0.output())
-        let b1 = Int(pow(2.0,1.0)) * Int(SwitchB1.output())
-        let b2 = Int(pow(2.0,2.0)) * Int(SwitchB2.output())
-        let b3 = Int(pow(2.0,3.0)) * Int(SwitchB3.output())
-        let b4 = Int(pow(2.0,4.0)) * Int(SwitchB4.output())
-        let b5 = Int(pow(2.0,5.0)) * Int(SwitchB5.output())
-        let b6 = Int(pow(2.0,6.0)) * Int(SwitchB6.output())
-        let b7 = Int(pow(2.0,7.0)) * Int(SwitchB7.output())
+        let b0 = 1 * Int(SwitchB0.output())
+        let b1 = 2 * Int(SwitchB1.output())
+        let b2 = 4 * Int(SwitchB2.output())
+        let b3 = 8 * Int(SwitchB3.output())
+        let b4 = 16 * Int(SwitchB4.output())
+        let b5 = 32 * Int(SwitchB5.output())
+        let b6 = 64 * Int(SwitchB6.output())
+        let b7 = 128 * Int(SwitchB7.output())
         
         b_decimal = b0
         b_decimal = b_decimal + b1
@@ -172,14 +177,14 @@ class ViewController: NSViewController
         
         var c_decimal: Int = 0
         
-        let c0 = Int(pow(2.0,0.0)) * Int(Light0.output())
-        let c1 = Int(pow(2.0,1.0)) * Int(Light1.output())
-        let c2 = Int(pow(2.0,2.0)) * Int(Light2.output())
-        let c3 = Int(pow(2.0,3.0)) * Int(Light3.output())
-        let c4 = Int(pow(2.0,4.0)) * Int(Light4.output())
-        let c5 = Int(pow(2.0,5.0)) * Int(Light5.output())
-        let c6 = Int(pow(2.0,6.0)) * Int(Light6.output())
-        let c7 = Int(pow(2.0,7.0)) * Int(Light7.output())
+        let c0 = 1 * Int(Light0.output())
+        let c1 = 2 * Int(Light1.output())
+        let c2 = 4 * Int(Light2.output())
+        let c3 = 8 * Int(Light3.output())
+        let c4 = 16 * Int(Light4.output())
+        let c5 = 32 * Int(Light5.output())
+        let c6 = 64 * Int(Light6.output())
+        let c7 = 128 * Int(Light7.output())
         
         c_decimal = c0
         c_decimal = c_decimal + c1
@@ -237,7 +242,7 @@ class ViewController: NSViewController
         updateAll()
     }
     
-    
+ 
     @IBAction func clearAction(_ sender: Any)
     {
         SwitchA0.set(value:false)

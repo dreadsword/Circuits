@@ -192,6 +192,7 @@ class ViewController: NSViewController
         
         total_decimalText.integerValue = Int(c_decimal)
         
+        
         if (Light8.output() == 1)
         {
             total_decimalText.textColor = NSColor.red
@@ -200,9 +201,8 @@ class ViewController: NSViewController
         {
             total_decimalText.textColor = NSColor.white
         }
-
-        
     }
+    
     
     @IBAction func a_decimalAction(_ sender: Any)
     {
@@ -220,6 +220,7 @@ class ViewController: NSViewController
         updateAll()
     }
     
+    
     @IBAction func b_decimalAction(_ sender: Any)
     {
         let val = b_decimalText.intValue
@@ -236,6 +237,7 @@ class ViewController: NSViewController
         updateAll()
     }
     
+    
     @IBAction func clearAction(_ sender: Any)
     {
         SwitchA0.set(value:false)
@@ -247,7 +249,6 @@ class ViewController: NSViewController
         SwitchA6.set(value:false)
         SwitchA7.set(value:false)
         
-        
         SwitchB0.set(value:false)
         SwitchB1.set(value:false)
         SwitchB2.set(value:false)
@@ -257,14 +258,15 @@ class ViewController: NSViewController
         SwitchB6.set(value:false)
         SwitchB7.set(value:false)
         
-        
         updateAll()
     }
+    
     
     @IBAction func buttonAction(_ sender: Any)
     {
         updateAll()
     }
+    
     
     func updateAll()
     {

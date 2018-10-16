@@ -18,5 +18,4 @@ class EightBitAdder
     var adder5: FullAdder!
     var adder6: FullAdder!
     var adder7: FullAdder!
-    
 }

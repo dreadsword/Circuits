@@ -18,6 +18,11 @@ class Switch
         theswitch = aswitch
     }
     
+    func set(value:Bool)
+    {
+        theswitch.state = value == true ? NSControl.StateValue.on : NSControl.StateValue.off
+    }
+    
     func output() -> UInt
     {
         return theswitch.state == .on ? 1 : 0

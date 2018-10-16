@@ -191,10 +191,82 @@ class ViewController: NSViewController
         c_decimal = c_decimal + c7
         
         total_decimalText.integerValue = Int(c_decimal)
+        
+        if (Light8.output() == 1)
+        {
+            total_decimalText.textColor = NSColor.red
+        }
+        else
+        {
+            total_decimalText.textColor = NSColor.white
+        }
+
+        
     }
     
+    @IBAction func a_decimalAction(_ sender: Any)
+    {
+        let val = a_decimalText.intValue
+        
+        SwitchA0.set(value:(val & 0b00000001) != 0)
+        SwitchA1.set(value:(val & 0b00000010) != 0)
+        SwitchA2.set(value:(val & 0b00000100) != 0)
+        SwitchA3.set(value:(val & 0b00001000) != 0)
+        SwitchA4.set(value:(val & 0b00010000) != 0)
+        SwitchA5.set(value:(val & 0b00100000) != 0)
+        SwitchA6.set(value:(val & 0b01000000) != 0)
+        SwitchA7.set(value:(val & 0b10000000) != 0)
+        
+        updateAll()
+    }
+    
+    @IBAction func b_decimalAction(_ sender: Any)
+    {
+        let val = b_decimalText.intValue
+        
+        SwitchB0.set(value:(val & 0b00000001) != 0)
+        SwitchB1.set(value:(val & 0b00000010) != 0)
+        SwitchB2.set(value:(val & 0b00000100) != 0)
+        SwitchB3.set(value:(val & 0b00001000) != 0)
+        SwitchB4.set(value:(val & 0b00010000) != 0)
+        SwitchB5.set(value:(val & 0b00100000) != 0)
+        SwitchB6.set(value:(val & 0b01000000) != 0)
+        SwitchB7.set(value:(val & 0b10000000) != 0)
+        
+        updateAll()
+    }
+    
+    @IBAction func clearAction(_ sender: Any)
+    {
+        SwitchA0.set(value:false)
+        SwitchA1.set(value:false)
+        SwitchA2.set(value:false)
+        SwitchA3.set(value:false)
+        SwitchA4.set(value:false)
+        SwitchA5.set(value:false)
+        SwitchA6.set(value:false)
+        SwitchA7.set(value:false)
+        
+        
+        SwitchB0.set(value:false)
+        SwitchB1.set(value:false)
+        SwitchB2.set(value:false)
+        SwitchB3.set(value:false)
+        SwitchB4.set(value:false)
+        SwitchB5.set(value:false)
+        SwitchB6.set(value:false)
+        SwitchB7.set(value:false)
+        
+        
+        updateAll()
+    }
     
     @IBAction func buttonAction(_ sender: Any)
+    {
+        updateAll()
+    }
+    
+    func updateAll()
     {
         Light0.setState()
         Light1.setState()

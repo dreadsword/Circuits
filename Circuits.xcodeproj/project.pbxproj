@@ -12,6 +12,18 @@
 		AE0674CF21752F6A00880CBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0674CE21752F6A00880CBE /* Assets.xcassets */; };
 		AE0674D221752F6A00880CBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0674D021752F6A00880CBE /* Main.storyboard */; };
 		AE0674DE21752F6A00880CBE /* CircuitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0674DD21752F6A00880CBE /* CircuitsTests.swift */; };
+		AE0674E921752FD400880CBE /* Gate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0674E821752FD400880CBE /* Gate.swift */; };
+		AE0674EB21752FF400880CBE /* AND.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0674EA21752FF400880CBE /* AND.swift */; };
+		AE0674ED2175300B00880CBE /* OR.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0674EC2175300B00880CBE /* OR.swift */; };
+		AE0674EF2175302500880CBE /* NOR.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0674EE2175302500880CBE /* NOR.swift */; };
+		AE0674F12175303900880CBE /* NAND.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0674F02175303900880CBE /* NAND.swift */; };
+		AE0674F32175304C00880CBE /* XOR.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0674F22175304C00880CBE /* XOR.swift */; };
+		AE0674F5217530A700880CBE /* INVERT.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0674F4217530A700880CBE /* INVERT.swift */; };
+		AE0674F7217530BA00880CBE /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0674F6217530BA00880CBE /* Switch.swift */; };
+		AE0674F9217530CF00880CBE /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0674F8217530CF00880CBE /* Light.swift */; };
+		AE0674FB21755AED00880CBE /* HalfAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0674FA21755AED00880CBE /* HalfAdder.swift */; };
+		AE0674FD21755B0800880CBE /* FullAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0674FC21755B0800880CBE /* FullAdder.swift */; };
+		AE06750021755BE400880CBE /* EightBitAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0674FE21755B8500880CBE /* EightBitAdder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,18 @@
 		AE0674D921752F6A00880CBE /* CircuitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircuitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0674DD21752F6A00880CBE /* CircuitsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitsTests.swift; sourceTree = "<group>"; };
 		AE0674DF21752F6A00880CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0674E821752FD400880CBE /* Gate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gate.swift; sourceTree = "<group>"; };
+		AE0674EA21752FF400880CBE /* AND.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AND.swift; sourceTree = "<group>"; };
+		AE0674EC2175300B00880CBE /* OR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OR.swift; sourceTree = "<group>"; };
+		AE0674EE2175302500880CBE /* NOR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOR.swift; sourceTree = "<group>"; };
+		AE0674F02175303900880CBE /* NAND.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAND.swift; sourceTree = "<group>"; };
+		AE0674F22175304C00880CBE /* XOR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XOR.swift; sourceTree = "<group>"; };
+		AE0674F4217530A700880CBE /* INVERT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INVERT.swift; sourceTree = "<group>"; };
+		AE0674F6217530BA00880CBE /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
+		AE0674F8217530CF00880CBE /* Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
+		AE0674FA21755AED00880CBE /* HalfAdder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfAdder.swift; sourceTree = "<group>"; };
+		AE0674FC21755B0800880CBE /* FullAdder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullAdder.swift; sourceTree = "<group>"; };
+		AE0674FE21755B8500880CBE /* EightBitAdder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightBitAdder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +101,21 @@
 			isa = PBXGroup;
 			children = (
 				AE0674CA21752F6800880CBE /* AppDelegate.swift */,
+				AE0674F6217530BA00880CBE /* Switch.swift */,
+				AE0674FA21755AED00880CBE /* HalfAdder.swift */,
+				AE0674FC21755B0800880CBE /* FullAdder.swift */,
+				AE0674FE21755B8500880CBE /* EightBitAdder.swift */,
+				AE0674F8217530CF00880CBE /* Light.swift */,
 				AE0674CC21752F6800880CBE /* ViewController.swift */,
 				AE0674CE21752F6A00880CBE /* Assets.xcassets */,
 				AE0674D021752F6A00880CBE /* Main.storyboard */,
+				AE0674E821752FD400880CBE /* Gate.swift */,
+				AE0674F4217530A700880CBE /* INVERT.swift */,
+				AE0674EA21752FF400880CBE /* AND.swift */,
+				AE0674EC2175300B00880CBE /* OR.swift */,
+				AE0674EE2175302500880CBE /* NOR.swift */,
+				AE0674F02175303900880CBE /* NAND.swift */,
+				AE0674F22175304C00880CBE /* XOR.swift */,
 				AE0674D321752F6A00880CBE /* Info.plist */,
 				AE0674D421752F6A00880CBE /* Circuits.entitlements */,
 			);
@@ -195,8 +231,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE06750021755BE400880CBE /* EightBitAdder.swift in Sources */,
 				AE0674CD21752F6800880CBE /* ViewController.swift in Sources */,
+				AE0674FB21755AED00880CBE /* HalfAdder.swift in Sources */,
+				AE0674E921752FD400880CBE /* Gate.swift in Sources */,
 				AE0674CB21752F6800880CBE /* AppDelegate.swift in Sources */,
+				AE0674F9217530CF00880CBE /* Light.swift in Sources */,
+				AE0674F12175303900880CBE /* NAND.swift in Sources */,
+				AE0674ED2175300B00880CBE /* OR.swift in Sources */,
+				AE0674F32175304C00880CBE /* XOR.swift in Sources */,
+				AE0674F5217530A700880CBE /* INVERT.swift in Sources */,
+				AE0674FD21755B0800880CBE /* FullAdder.swift in Sources */,
+				AE0674EB21752FF400880CBE /* AND.swift in Sources */,
+				AE0674EF2175302500880CBE /* NOR.swift in Sources */,
+				AE0674F7217530BA00880CBE /* Switch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
